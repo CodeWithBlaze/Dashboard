@@ -16,7 +16,7 @@ function TaskContainer({children,title,value,valueBgColor,valueTextColor}) {
                     textStyle='task-title-text-value-custom'
                     containerStyle={'task-title-value-custom'}/>
                 </div>
-                <img src='/images/more_horiz.svg'/>
+                <img src='/images/more_horiz.svg' alt='more menu icon'/>
             </div>
             <div style={{marginTop:30}}>
             {children}

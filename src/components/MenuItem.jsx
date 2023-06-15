@@ -6,7 +6,7 @@ function MenuItem({imgStyle,textStyle,value,text,img}) {
     return (
         <div className='menu-item-container'>
             <div className='menu-item-logo-text'>
-                <img src={img} className={imgStyle}/>
+                <img src={img} className={imgStyle} alt='menu icon'/>
                 <p className={textStyle}>{text}</p>
             </div>
             {value && <Value value={value} 

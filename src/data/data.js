@@ -183,6 +183,7 @@ export const otherUsers = [
 
 export const backLogsTask = [
     {
+        id:1,
         title:'Model Answer',
         value:4,
         users:taskUsers,
@@ -208,6 +209,7 @@ export const backLogsTask = [
         ]
     },
     {
+        id:2,
         title:'Create calendar, chat and email app pages',
         value:1,
         users:taskUsers,
@@ -233,6 +235,7 @@ export const backLogsTask = [
         ]
     },
     {
+        id:3,
         title:'Product Design, Figma, Sketch (Software), Prototype',
         value:4,
         users:[taskUsers[0]],
@@ -258,6 +261,7 @@ export const backLogsTask = [
         ]
     },
     {
+        id:4,
         title:'Change email option process',
         value:4,
         users:[taskUsers[0],taskUsers[1]],
@@ -277,6 +281,7 @@ export const backLogsTask = [
         ]
     },
     {
+        id:5,
         title:'Post launch reminder/ Post list',
         users:[],
         tags:[
@@ -297,6 +302,7 @@ export const backLogsTask = [
 
 export const todoTask = [
     {
+        id:1,
         title:'Model Answer',
         value:4,
         users:taskUsers,
@@ -322,6 +328,7 @@ export const todoTask = [
         ]
     },
     {
+        id:2,
         title:'Add authentication pages',
         users:[],
         
@@ -340,6 +347,7 @@ export const todoTask = [
         ]
     },
     {
+        id:3,
         title:'Profile Page Satructure',
         users:[],
         
@@ -358,6 +366,7 @@ export const todoTask = [
         ]
     },
     {
+        id:4,
         title:'Create calendar, chat and email app pages',
         value:2,
         users:[taskUsers[0],taskUsers[1]],
@@ -380,6 +389,7 @@ export const todoTask = [
 
 export const inProgressTask = [
     {
+        id:1,
         title:'Model Answer',
         value:4,
         users:taskUsers,
@@ -405,6 +415,7 @@ export const inProgressTask = [
         ]
     },
     {
+        id:2,
         title:'Create calendar, chat and email app pages',
         value:2,
         users:[taskUsers[0],taskUsers[1],<ShowMore number={3} size={35}/>],
@@ -426,6 +437,7 @@ export const inProgressTask = [
 ]
 export const doneTask = [
     {
+        id:1,
         title:'Model Answer',
         users:taskUsers,
         tags:[
@@ -445,6 +457,7 @@ export const doneTask = [
         ]
     },
     {
+        id:2,
         title:'Create calendar, chat and email app pages',
         users:[taskUsers[0],taskUsers[1],<ShowMore number={3} size={35}/>],
         attachment:2,
@@ -465,6 +478,7 @@ export const doneTask = [
         ]
     },
     {
+        id:3,
         title:'Product Design, Figma, Sketch (Software), Prototype',
         users:[taskUsers[0]],
         tags:[
@@ -484,6 +498,7 @@ export const doneTask = [
         ]
     },
     {
+        id:4,
         title:'Model Answer',
         users:[taskUsers[0],taskUsers[1]],
         tags:[
@@ -503,6 +518,7 @@ export const doneTask = [
         ]
     },
     {
+        id:5,
         title:'Create calendar, chat and email app pages',
         users:[],
         tags:[

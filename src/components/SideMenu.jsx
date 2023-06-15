@@ -5,8 +5,9 @@ function SideMenu({menuItems=[]}) {
     return (
         <>
         {
-            menuItems.map(menu=>
+            menuItems.map((menu,index)=>
             <MenuItem
+            key={index}
             imgStyle={'menuitems-icon'}
             textStyle={'menuitems-text'}
             value={menu.value}

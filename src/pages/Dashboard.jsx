@@ -10,7 +10,7 @@ import IconBoard from '../components/IconBoard';
 import TaskContainer from '../components/TaskContainer';
 import TaskBox from '../components/TaskBox';
 import Tag from '../components/Tag';
-import { backLogsTask,inProgressTask,doneTask,todoTask,SubMenu,users,taskUsers,sideDashboardMenu,sideProjectMenu, otherUsers, STATUS } from '../data/data';
+import { backLogsTask,inProgressTask,doneTask,todoTask,SubMenu,users,sideDashboardMenu,sideProjectMenu, otherUsers, STATUS } from '../data/data';
 import UserProfile from '../components/UserProfile';
 import SideMenu from '../components/SideMenu';
 import MainNavigation from '../components/MainNavigation';
@@ -20,7 +20,6 @@ function wrapTagsIntoComponent(tags){
     tags.forEach(tag=>{
         tagComponents.push(<Tag title={tag.title} bgColor={tag.bgColor} color={tag.color} borderColor={tag.borderColor}/>)
     })
-    console.log(tagComponents)
     return tagComponents
 }
 
@@ -44,7 +43,7 @@ function Dashboard(props) {
                         designation={'Designer'}
                         />
                     </div>
-                    <img src={'/images/unfold_more.svg'}/>
+                    <img src={'/images/unfold_more.svg'} alt='more menu'/>
                 </div>
                 <Heading 
                 text={'DASHBOARDS'}
@@ -142,12 +141,13 @@ function Dashboard(props) {
                     <TaskContainer 
                     valueBgColor={'rgb(202,138,4,0.1)'} 
                     valueTextColor={'#CA8A04'}
-                    value={5}
+                    value={backLogsTask.length}
                     title={'Backlog Tasks'}
                     >
                         {
                             backLogsTask.map(task=>
                             <TaskBox
+                                key={task.id} // should be id when fetched from database
                                 title={task.title}
                                 value={task.value}
                                 tags={wrapTagsIntoComponent(task.tags)}
@@ -161,12 +161,13 @@ function Dashboard(props) {
                     <TaskContainer 
                     valueBgColor={'rgb(219,39,119,0.1)'} 
                     valueTextColor={'#DB2777'}
-                    value={5}
+                    value={todoTask.length}
                     title={'To Do Tasks'}
                     >
                         {
                             todoTask.map(task=>
                             <TaskBox
+                                key={task.id}
                                 title={task.title}
                                 value={task.value}
                                 tags={wrapTagsIntoComponent(task.tags)}
@@ -178,12 +179,13 @@ function Dashboard(props) {
                     <TaskContainer 
                     valueBgColor={'rgb(147,51,234,0.1)'} 
                     valueTextColor={'#9333EA'}
-                    value={5}
+                    value={inProgressTask.length}
                     title={'In Progress'}
                     >
                         {
                             inProgressTask.map(task=>
                             <TaskBox
+                                key={task.id}
                                 title={task.title}
                                 value={task.value}
                                 tags={wrapTagsIntoComponent(task.tags)}
@@ -195,12 +197,13 @@ function Dashboard(props) {
                     <TaskContainer 
                     valueBgColor={'rgb(22,163,74,0.1)'} 
                     valueTextColor={'#16A34A'}
-                    value={5}
+                    value={doneTask.length}
                     title={'Done'}
                     >
                        {
                             doneTask.map(task=>
                             <TaskBox
+                                key={task.id}
                                 title={task.title}
                                 value={task.value}
                                 tags={wrapTagsIntoComponent(task.tags)}
@@ -214,12 +217,13 @@ function Dashboard(props) {
             <div className='fullscreen-container containeruser-container'>
                 <div className='user-panel-controller'>
                     <div className='heading-container'>
-                        <img src='/images/close.svg'/>
+                        <img src='/images/close.svg' alt='close'/>
                     </div>
                     <div className='users-panel-container'>
                         {
-                            otherUsers.map(user=>
+                            otherUsers.map((user,index)=>
                             <UserPhoto
+                                key={index}
                                 img={user.img}
                                 size={45}
                                 status={user.status}
@@ -232,7 +236,7 @@ function Dashboard(props) {
                             
                     </div>
                     <div className='heading-container'>
-                        <img src='/images/arrow_forward.svg'/>
+                        <img src='/images/arrow_forward.svg' alt='forawrd arrow'/>
                     </div> 
                 </div>
             </div>
