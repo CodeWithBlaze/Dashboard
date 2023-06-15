@@ -1,0 +1,7 @@
+.photoset-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+

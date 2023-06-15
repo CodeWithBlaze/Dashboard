@@ -1,0 +1,21 @@
+.icon-board-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: fit-content;
+    border:1px solid #EBEEF2;
+}
+.icon-board-container img{
+    width: 20px;
+    height:20px;
+    
+}
+.icon-board-container p{
+    font-size: 12px;
+    font-weight: 600;
+    color:#606C80;
+    margin-left: 10px;
+}

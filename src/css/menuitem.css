@@ -1,0 +1,18 @@
+.menuitem-value-container{
+    background-color: rgba(59,130,246,0.1);
+}
+.menuitem-value-text{
+    color:#2563EB;
+    font-weight: 800;
+    font-size: 10px;
+}
+.menu-item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.menu-item-logo-text{
+    display: flex;
+    align-items: center;
+}

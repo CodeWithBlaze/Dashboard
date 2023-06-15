@@ -1,0 +1,33 @@
+.user-photo-container{
+    border-radius:50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.photo-frame{
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2.4px;
+    border-style: solid;
+}
+
+.status{
+    position:absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+}
+.user-photo-value-container{
+    position: absolute;
+    top: -5px;
+    right: -11px;
+}

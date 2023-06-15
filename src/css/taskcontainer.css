@@ -1,0 +1,26 @@
+.task-container{
+    width: 260px;
+    margin-bottom: 15px;
+}
+.task-container:last-of-type{
+    margin-right: 0px;
+}
+.task-container-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.task-title{
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+.task-title-value-custom{
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+}
+.task-title-text-value-custom{
+    font-weight: 600;
+}

@@ -1,0 +1,27 @@
+.navbar-menu-items-list{
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+.navbar-active-menu{
+    font-size: 11px;
+    position: relative;
+    font-weight: 600;
+    color:#7A8699;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.link-active::after{
+    content: "";
+    display: block;
+    background-color:#2563EB;
+    width:"100%";
+    height:1px;
+    margin-top:5px;
+}
+.navbar-container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}

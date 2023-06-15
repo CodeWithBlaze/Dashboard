@@ -1,0 +1,34 @@
+.taskbox-main-container{
+    background-color: white;
+    padding:20px;
+    width: 100%;
+    height:150px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 15px;
+}
+.text-and-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.text-and-icon p{
+    font-size: 12px;
+    max-width: 90%;
+    font-weight: 500;
+}
+.task-tags{
+    display: flex;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+.task-tags > *{
+    margin-right: 5px;
+}
+.task-users{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
